@@ -77,7 +77,7 @@ function Blogs() {
                 />
                 <h2 className="text-2xl font-semibold pb-6">{blog.title}</h2>
                 <p className="text-[#999999]">
-                  {blog.des}{" "}
+                  {blog.des}
                   <Link className="text-[#666666] font-medium">Read More</Link>
                 </p>
               </div>
@@ -86,13 +86,13 @@ function Blogs() {
             <div className="flex justify-between md:hidden py-5">
               <div
                 onClick={increment}
-                className=" text-xl bg-main bg-opacity-10 text-main rounded-full w-10 h-10 flex justify-center items-center absolute top-1/2 -left-10"
+                className=" text-xl bg-main bg-opacity-10 text-main rounded-full w-10 h-10 flex justify-center items-center absolute top-1/2 -left-5"
               >
                 <i className="fa-solid fa-chevron-left"></i>
               </div>
               <div
                 onClick={decrement}
-                className=" text-xl bg-main bg-opacity-10 text-main rounded-full w-10 h-10 flex justify-center items-center absolute top-1/2  -right-10"
+                className=" text-xl bg-main bg-opacity-10 text-main rounded-full w-10 h-10 flex justify-center items-center absolute top-1/2  -right-5"
               >
                 <i className="fa-solid fa-chevron-right"></i>
               </div>

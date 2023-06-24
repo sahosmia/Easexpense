@@ -5,7 +5,7 @@ function Contact() {
       <div className="bg-[#FAFAFA]">
         <div className="bg-none lg:bg-no-repeat lg:bg-fit lg:bg-center lg:bg-hero-pattern relative py-5 md:py-10 lg:py-20">
           <div className="container flex flex-col lg:flex-row items-center gap-10">
-            <div className="bg-light p-8 m-auto w-9/12 rounded-3xl">
+            <div className="bg-light p-8 m-auto w-full md:w-10/12 lg:w-9/12 rounded-3xl">
               <div className="mb-4 md:mb-8">
                 <h2 className="text-[24px] md:text-[40px] font-bold md:pb-4">
                   Get in Touch with Us

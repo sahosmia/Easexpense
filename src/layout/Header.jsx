@@ -10,7 +10,7 @@ function Header() {
         <div>
           <Link to="/">
             <img
-              className="w-10/12"
+              className="w-8/12 mt-3"
               src="/images/logo.png"
               alt="Easexpense logo"
             />
@@ -75,57 +75,51 @@ function Header() {
           </div>
         </div>
         {toggleBar && (
-          <ul className=" flex flex-col gap-5 justify-center  items-center font-poppins font-semibold absolute inset-0 bg-light w-full h-screen z-10">
+          <ul className=" flex flex-col gap-10  font-poppins font-semibold absolute top-0 bottom-0 left-0 bg-[#D0EDFB] w-9/12 h-screen z-10 shadow-xl px-10">
+            <div>
+              <Link to="/">
+                <img
+                  className="w-60 mt-10 mb-8"
+                  src="/images/logo.png"
+                  alt="Easexpense logo"
+                />
+              </Link>
+            </div>
             <li>
-              <NavLink
-                className="text-[#999999] hover:text-secondary transition-all"
-                to="/"
-                onClick={() => setToggleBar(!toggleBar)}
-              >
+              <Link to="/" onClick={() => setToggleBar(!toggleBar)}>
                 Home
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink
-                className="text-[#999999] hover:text-secondary transition-all"
-                to="/blog"
-                onClick={() => setToggleBar(!toggleBar)}
-              >
-                Blog
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="text-[#999999] hover:text-secondary transition-all"
-                to="/about"
-                onClick={() => setToggleBar(!toggleBar)}
-              >
-                About us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="text-[#999999] hover:text-secondary transition-all"
-                to="contact"
-                onClick={() => setToggleBar(!toggleBar)}
-              >
-                Contact us
-              </NavLink>
-            </li>
-
-            <li>
-              <Link
-                className="text-main font-medium font-roboto"
-                to="/"
-                onClick={() => setToggleBar(!toggleBar)}
-              >
-                Sing In
               </Link>
             </li>
 
+            <li>
+              <Link to="/blog" onClick={() => setToggleBar(!toggleBar)}>
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={() => setToggleBar(!toggleBar)}>
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" onClick={() => setToggleBar(!toggleBar)}>
+                Contact us
+              </Link>
+            </li>
+
+            <li>
+              <div className=" gap-3 font-medium font-roboto flex flex-col text-center">
+                <Link className="text-main inline-block  text-md  lg:text-lg font-medium hover:bg-main hover:text-light border border-main rounded py-5 px-8 transition-all duration-300">
+                  Sing In
+                </Link>
+
+                <Link className="hover:text-main inline-block text-md  lg:text-lg font-medium hover:bg-transparent bg-main text-light border border-main rounded py-5 px-8 transition-all duration-300">
+                  Free trial
+                </Link>
+              </div>
+            </li>
             <div
-              className="absolute top-10 right-10"
+              className="absolute top-5 right-5"
               onClick={() => setToggleBar(!toggleBar)}
             >
               <span className="text-xl">

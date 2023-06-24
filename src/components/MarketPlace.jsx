@@ -43,6 +43,10 @@ function MarketPlace() {
       des: "A popular video conferencing and online meeting platform that enables seamless ",
     },
   ];
+
+  let mobileWidth = 767;
+  let currentWidth = window.innerWidth;
+
   return (
     <div className="bg-[#F5F9FC] py-10 md:py-20">
       <div className="container">
@@ -58,8 +62,13 @@ function MarketPlace() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-10 pb-10 md:pb-20">
-          {marketplaces.map((item, i) => (
-            <div key={i} className="bg-light rounded-3xl p-6 relative">
+          {marketplaces.map((item, j) => (
+            <div
+              key={j}
+              className={`bg-light rounded-3xl p-6 relative ${
+                currentWidth <= mobileWidth && j > 3 ? "hidden" : ""
+              }`}
+            >
               <div>
                 <div className="border border-[#EDEDED] w-24 h-24 flex justify-center items-center rounded-full  mb-4">
                   <img src={item.src} alt={item.title} />
@@ -73,7 +82,6 @@ function MarketPlace() {
 
               <span className="w-9 h-9 flex justify-center items-center border border-[#EDEDED] rounded-full absolute top-5 right-6">
                 <Link>
-                  
                   <i className="fas fa-arrow-up rotate-45"></i>
                 </Link>
               </span>
