@@ -47,7 +47,7 @@ function Blogs() {
   }, [currentItem, blogs.length]);
 
   return (
-    <div className="bg-[#FAFAFA] py-10 md:py-20">
+    <div className="bg-[#FAFAFA] py-10 md:py-20" id="blog-section-id">
       <div className="container">
         <div className="m-auto w-full md:w-1/2 text-center mb-8 md:mb-20">
           <h2 className="text-[24px] md:text-[40px] font-bold md:pb-4">

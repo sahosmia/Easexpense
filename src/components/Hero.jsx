@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="bg-none lg:bg-no-repeat lg:bg-fit lg:bg-right lg:bg-hero-pattern relative pt-8 md:pt-20 lg:pt-40">
       <div className="container flex flex-col lg:flex-row items-center gap-10">
-        <div className="flex-1 md:32 lg:mr-44">
+        <div className="w-full lg:w-5/12 md:32 lg:mr-44">
           <h1 className="text-[30px] md:text-[50px] font-bold md:pb-4">
             Maximize Business Potential with Cutting-Edge SaaS
           </h1>
@@ -14,7 +14,10 @@ function Hero() {
             exponential growth and efficiency
           </p>
           <div className="flex gap-3">
-            <Link className="hover:text-main inline-block text-md  lg:text-lg font-medium hover:bg-transparent bg-main text-light border border-main rounded-xl py-5 px-8 transition-all duration-300">
+            <Link
+              to="/contact"
+              className="hover:text-main inline-block text-md  lg:text-lg font-medium hover:bg-transparent bg-main text-light border border-main rounded-xl py-5 px-8 transition-all duration-300"
+            >
               Get Started
             </Link>
             <Link className="text-main inline-block  text-md  lg:text-lg font-medium hover:bg-main hover:text-light border border-main rounded-xl py-5 px-8 transition-all duration-300">
@@ -22,7 +25,7 @@ function Hero() {
             </Link>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="w-full lg:w-7/12">
           <div>
             <img className="w-full" src="/images/hero.png" alt="" />
           </div>

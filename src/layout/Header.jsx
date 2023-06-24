@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Header() {
   const [toggleBar, setToggleBar] = useState(false);
-
   return (
     <header className="bg-transparent">
       <nav className="container h-24 flex justify-between items-center gap-1 lg:gap-10 ">
@@ -28,20 +28,21 @@ function Header() {
           </li>
 
           <li>
-            <NavLink
+            <HashLink
               className="text-[#999999] hover:text-secondary transition-all"
-              to="/blog"
+              to="/#blog-section-id"
+              smooth
             >
               Blog
-            </NavLink>
+            </HashLink>
           </li>
           <li>
-            <NavLink
+            <HashLink
               className="text-[#999999] hover:text-secondary transition-all"
-              to="/about"
+              to="/"
             >
               About us
-            </NavLink>
+            </HashLink>
           </li>
           <li>
             <NavLink
