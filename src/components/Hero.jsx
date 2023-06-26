@@ -3,10 +3,10 @@ import Company from "./Company";
 
 function Hero() {
   return (
-    <div className="bg-none lg:bg-no-repeat lg:bg-fit lg:bg-right lg:bg-hero-pattern relative pt-8 md:pt-20 lg:pt-40">
+    <div className="bg-none lg:bg-no-repeat lg:bg-fit lg:bg-right lg:bg-hero-pattern relative pt-8 md:pt-14 lg:pt-20">
       <div className="container flex flex-col lg:flex-row items-center gap-10">
-        <div className="w-full lg:w-5/12 md:32 lg:mr-44">
-          <h1 className="text-[30px] md:text-[50px] font-bold md:pb-4">
+        <div className="w-full lg:w-5/12 ">
+          <h1 className="text-[30px] md:text-[40px] font-bold md:pb-4">
             Maximize Business Potential with Cutting-Edge SaaS
           </h1>
           <p className="text-[#999999] text-sm md:text-base px-2 pb-8 lg:pb-16 max-w-prose">

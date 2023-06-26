@@ -6,7 +6,7 @@ function Header() {
   const [toggleBar, setToggleBar] = useState(false);
   return (
     <header className="bg-transparent">
-      <nav className="container h-24 flex justify-between items-center gap-1 lg:gap-10 ">
+      <nav className="container h-16 flex justify-between items-center gap-1 lg:gap-10 ">
         <div>
           <Link to="/">
             <img
